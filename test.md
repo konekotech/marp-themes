@@ -1,7 +1,7 @@
 ---
 marp: true
 size: 4:3
-theme: mytheme
+theme: google-test
 paginate: true
 ---
 
@@ -9,44 +9,25 @@ paginate: true
 _class: top
 -->
 
-# The Google's PageRank Algorithm
-## xxで始めるyy生活
+# Python 機械学習プログラミング PyTorch & scikit-learn編
+## 第4章 データの前処理 -- よりよい訓練データセットの構築
+### 首藤 朗
 
 ---
 
-# Slide 2
+# 4.1 欠損データへの対処
 
-## これはアレかもしれない
+## 欠損値 (missing value)
 
-これはスライド、つまり**最強のスライド**です。
-- あれ
-- それ
-- これ
-- どれ
+データを収集する過程で誤りがあったり、不適切な計測があったり、アンケート調査で空欄のままになっている項目があることがある。
+- データテーブルの**空欄**
+- **`NaN`**（Not a Number）
+- **`null`**（RDBにおいて不明な値を表すのに使われる）
 
-## コードを置いてみると
+---
+
+# 4.1.1 表形式のデータで欠損値を特定
+
+## 欠損値の特定
 
 ```python
-print("Hello, World!")
-```
-
----
-
-# 証明しよう
-
-$\displaystyle \int_0^1 x d x$ であることを利用する。
-$$\sum_{n = 0}^n \sin{nx}$$
-このとき、`NaN`を求める。
-
-$$
-\begin{bmatrix}
-    a_{n + 2}\\
-    a_{n + 1}
-\end{bmatrix} = \begin{bmatrix}
-    1 & 6\\
-    1 & 0\\
-\end{bmatrix}\begin{bmatrix}
-    a_{n + 1}\\
-    a_{n}
-\end{bmatrix}
-$$
