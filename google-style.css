@@ -58,15 +58,27 @@ section.top h1 {
   text-align: center;
 }
 
-section h1::after{
-  content: '';
+/* 下線を作成する */
+section h1::after {
+    content: '';
     position: absolute;
     left: 0;
     bottom: -3px; /* 下線の位置 */
     width: 100%;
-    height: 5px; /* 下線の太さ */
-    background: linear-gradient(to right, #4285F4, #EA4335, #FBBC05, #34A853);
+    height: 7px; /* 下線の太さ */
+    background-image: linear-gradient(to right,
+        #4285F4 0%, /* 最初の点の色 */
+        #4285F4 20%, /* 2番目の点の色 */
+        #EA4335 20%, /* 2番目の点の色 */
+        #EA4335 40%, /* 3番目の点の色 */
+        #FBBC05 40%, /* 3番目の点の色 */
+        #FBBC05 60%, /* 4番目の点の色 */
+        #34A853 60%, /* 4番目の点の色 */
+        #34A853 80%, /* 最後の点の色 */
+        #4285F4 80%  /* 最後の点の色 */
+    );
 }
+
 
 section.top h2 {
   color: #444444;
