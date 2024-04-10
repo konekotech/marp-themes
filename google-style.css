@@ -1,0 +1,83 @@
+/* @theme mytheme */
+
+@import "default";
+
+:root{
+  font-family: "Product Sans", "Noto Sans JP", "sans-serif";
+}
+
+/* クラス名未指定全スライド共通設定 */
+section {
+  /* フォント指定 */
+  color: #444444;
+  font-size: 18px;
+  /* スライドのサイズを指定 デフォルトでは16:9 */
+  width: 100%;
+  height: 100%;
+}
+
+section:not(.top) h1{
+  font-size: 40px;
+  color: #444444;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+
+section header {
+  text-align: right;
+  color: darkblue;
+}
+
+section footer {
+  color: dimgray;
+}
+
+/*ページ番号*/
+section::after {
+  font-size: 15px;
+	right: 30px; /* works as footer margin */
+	width: calc(100% - 60px);
+	text-align: center;
+	padding-top: 15px;
+}
+
+/* topクラス*/
+section.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.top h1 {
+  color: #444444;
+  font-size: 50px;
+  position: relative; /* 親要素を相対位置に設定する */
+}
+
+section.top h1::after{
+  content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* 下線の位置 */
+    width: 100%;
+    height: 5px; /* 下線の太さ */
+    background: linear-gradient(to right, #4285F4, #EA4335, #FBBC05, #34A853);
+}
+
+section.top h2 {
+  color: #444444;
+  margin-top: 20px;
+}
+
+code {
+      font-family: "Menlo";
+      background-color: white;
+}
+
+strong,b {
+  color: #4285f4;
+}
