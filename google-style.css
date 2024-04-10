@@ -55,9 +55,10 @@ section.top h1 {
   color: #444444;
   font-size: 50px;
   position: relative; /* 親要素を相対位置に設定する */
+  text-align: center;
 }
 
-section.top h1::after{
+section h1::after{
   content: '';
     position: absolute;
     left: 0;
@@ -73,10 +74,40 @@ section.top h2 {
 }
 
 code {
-      font-family: "Menlo";
-      background-color: white;
+  font-family: "Menlo" monospace !important;
+  background-color: white;
 }
 
-strong,b {
+pre {
+  background-color: #FFFFFF;
+}
+
+/* strong,b {
   color: #4285f4;
+} */
+
+[class^="language-"] {
+  color: #444444;
+}
+
+[class^="hljs-"] {
+  color: #444444;
+}
+
+.hljs-keyword, .hljs-built_in{
+  font-weight: bold;
+}
+
+.hljs-string, .hljs-title{
+  color: #444444;
+}
+
+.hljs-comment{
+  color: #999999;
+}
+
+.code-title {
+  color:#444444;
+  font-weight: bold;
+  text-align: center;
 }
