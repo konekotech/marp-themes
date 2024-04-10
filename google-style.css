@@ -16,16 +16,18 @@ section {
   height: 100%;
 }
 
-section:not(.top) h1{
+section:not(.top) {
+  position: relative; /* 親要素に相対位置を設定する */
+  width: 100%; /* 親要素の幅を100%に設定する */
+  text-align: center; /* テキストを中央揃えにする */
+}
+
+section:not(.top) h1 {
   font-size: 40px;
   color: #444444;
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
+  display: inline-block; /* テキストをインラインブロック要素として配置する */
 }
+
 
 section header {
   text-align: right;
