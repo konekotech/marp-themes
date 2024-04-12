@@ -21,18 +21,20 @@ section:not(.top) h1{
   color: #444444;
   position: absolute;
   top: 50px;
-  left: 0; /* 左端に配置 */
-  right: 0; /* 右端に配置 */
+  left: 50px; /* 左端に配置 */
+  right: 50px; /* 右端に配置 */
   text-align: center; /* テキストを中央揃えにする */
 }
 
+
+
 section header {
   text-align: right;
-  color: darkblue;
+  color: #555555;
 }
 
 section footer {
-  color: dimgray;
+  color: #555555;
 }
 
 /*ページ番号*/
