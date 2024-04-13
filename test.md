@@ -9,7 +9,7 @@ paginate: true
 _class: top
 -->
 
-# Python 機械学習プログラミング <br> PyTorch & scikit-learn 編
+# Python 機械学習プログラミング <br> 第 2 版
 
 ## 第 4 章 データの前処理 -- よりよい訓練データセットの構築
 
@@ -46,3 +46,7 @@ csv_data = '''A,B,C,D
 df = pd.read_csv(StringIO(csv_data))
 df.isnull().sum()
 ```
+
+---
+
+# aaa
