@@ -1,0 +1,165 @@
+/* @theme apple-style */
+
+@import "default";
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+:root{
+  font-family: "SF Pro", "Noto Sans JP", "sans-serif", "Apple Color Emoji";
+}
+
+/* クラス名未指定全スライド共通設定 */
+section {
+  /* フォント指定 */
+  color: #1D1D1F;
+  font-size: 18px;
+  /* スライドのサイズを指定 デフォルトでは16:9 */
+  width: 100%;
+  height: 100%;
+}
+
+section:not(.top) h1{
+  font-size: 40px;
+  color: #1D1D1F;
+  position: absolute;
+  top: 50px;
+  left: 50px; /* 左端に配置 */
+  right: 50px; /* 右端に配置 */
+  text-align: center; /* テキストを中央揃えにする */
+}
+
+
+
+section header {
+  text-align: right;
+  color: #555555;
+}
+
+section footer {
+  color: #555555;
+}
+
+/*ページ番号*/
+section::after {
+  font-size: 15px;
+	right: 30px; /* works as footer margin */
+	width: calc(100% - 60px);
+	text-align: center;
+	padding-top: 15px;
+}
+
+/* topクラス*/
+section.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.top h1 {
+  color: #1D1D1F;
+  font-size: 50px;
+  position: relative; /* 親要素を相対位置に設定する */
+  text-align: center;
+}
+
+
+
+/* 下線を作成する */
+section:not(.top) h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* 下線の位置 */
+    width: 100%;
+    height: 7px; /* 下線の太さ */
+
+}
+
+
+section.top h2 {
+  color: #6E6E73;
+  margin-top: 20px;
+}
+
+code {
+  font-family: "Menlo" monospace !important;
+  background-color: white;
+}
+
+pre {
+  background-color: #FFFFFF;
+}
+
+/* strong,b {
+  color: #4285f4;
+} */
+
+[class^="language-"] {
+  color: #1D1D1F;
+}
+
+[class^="hljs-"] {
+  color: #1D1D1F;
+}
+
+.hljs-keyword, .hljs-built_in{
+  font-weight: bold;
+}
+
+.hljs-string, .hljs-title{
+  color: #1D1D1F;
+}
+
+.hljs-comment{
+  color: #999999;
+}
+
+.code-title {
+  color:#1D1D1F;
+  font-weight: bold;
+  text-align: center;
+}
+
+em {
+  color: #ff0000; /* テキストの色を赤に設定 */
+  font-style:normal; /* フォントを斜体に設定 */
+  font-weight: bold; /* フォントを太字に設定 */
+  background: -webkit-linear-gradient(45deg, #54d0ff, #9f92ff 20%, #ff7689 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+strong {
+  color: #6e6e73;
+}
+
+h1 strong{
+  color: #6E6E73;
+}
+h2 strong{
+  color: #6E6E73;
+}
+h3 strong{
+  color: #6E6E73;
+}
+h4 strong{
+  color: #6E6E73;
+}
+h5 strong{
+  color: #6E6E73;
+}
+h6 strong{
+  color: #6E6E73;
+}
+
+
+.text-gradient {
+  display: inline-block;
+  background: -webkit-linear-gradient(45deg, #54d0ff, #9f92ff 20%, #ff7689 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  /* 未対応ブラウザのために一応テキスト色を指定しておく */
+  color: blue;
+}
