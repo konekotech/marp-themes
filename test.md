@@ -1,7 +1,7 @@
 ---
 marp: true
 size: 4:3
-theme: normal-style
+theme: normal-test
 paginate: true
 footer: "@konekotech All rights reserved."
 ---
@@ -10,7 +10,7 @@ footer: "@konekotech All rights reserved."
 _class: top
 -->
 
-# $\LaTeX$ install challange !
+# あいうえお 
 
 ## Mac 編
 

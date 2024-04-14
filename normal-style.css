@@ -30,8 +30,6 @@ section:not(.top) h1{
   border-bottom: 10px dotted orange;
 }
 
-
-
 section header {
   text-align: right;
   color: #555555;
@@ -62,7 +60,8 @@ section.top h1 {
   font-size: 50px;
   position: relative; /* 親要素を相対位置に設定する */
   text-align: center;
-  padding: 20px;
+  padding: 0 80px 10px 80px;
+  max-width: 800px;
   border-bottom: 8px dotted orange;
 }
 
