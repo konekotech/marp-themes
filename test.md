@@ -10,7 +10,7 @@ footer: "@konekotech All rights reserved."
 _class: top
 -->
 
-# あいうえお 
+# あいうえお
 
 ## Mac 編
 
