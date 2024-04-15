@@ -1,16 +1,22 @@
 ---
 marp: true
 size: 4:3
-theme: normal-test
+theme: google-style
 paginate: true
 footer: "@konekotech All rights reserved."
 ---
+
+<style>
+  li{
+    padding: 20px;
+  }
+</style>
 
 <!--
 _class: top
 -->
 
-# あいうえお
+# SECURITY INFORMATICAL PROGRAM
 
 ## Mac 編
 
