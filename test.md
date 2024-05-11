@@ -1,16 +1,10 @@
 ---
 marp: true
-size: 4:3
+size: 16:9
 theme: google-style
 paginate: true
 footer: "@konekotech All rights reserved."
 ---
-
-<style>
-  li{
-    padding: 20px;
-  }
-</style>
 
 <!--
 _class: top

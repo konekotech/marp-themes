@@ -1,25 +1,31 @@
-/* @theme google-style */
+/* @theme cybozu-style */
 
 @import "default";
 @import url('https://fonts.cdnfonts.com/css/product-sans');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&display=swap');
 
 :root{
-  font-family: "Product Sans", "Noto Sans JP", "sans-serif", "Apple Color Emoji";
+  font-family: "Product Sans", "M PLUS 1p", "sans-serif", "Apple Color Emoji";
 }
 
 /* クラス名未指定全スライド共通設定 */
 section {
   /* フォント指定 */
   color: #444444;
-  font-size: 20px;
+  background-color: #ffffff;
+  outline: 5em dotted #29beb0;
+  outline-offset: -1.5em;
+  border-radius: 10px;
+  font-size: 30px;
   /* スライドのサイズを指定 デフォルトでは16:9 */
   width: 100%;
   height: 100%;
 }
 
 section:not(.top) h1{
-  font-size: 40px;
+  font-size: 50px;
   color: #444444;
   position: absolute;
   top: 50px;
@@ -78,17 +84,6 @@ section.top h1::after {
     width: 250%;
     max-width: 800px;
     height: 7px; /* 下線の太さ */
-    background-image: linear-gradient(to right,
-        #4285F4 0%, /* 最初の点の色 */
-        #4285F4 20%, /* 2番目の点の色 */
-        #EA4335 20%, /* 2番目の点の色 */
-        #EA4335 40%, /* 3番目の点の色 */
-        #FBBC05 40%, /* 3番目の点の色 */
-        #FBBC05 60%, /* 4番目の点の色 */
-        #34A853 60%, /* 4番目の点の色 */
-        #34A853 80%, /* 最後の点の色 */
-        #4285F4 80%  /* 最後の点の色 */
-    );
 }
 
 /* 下線を作成する */
@@ -99,17 +94,6 @@ section:not(.top) h1::after {
     bottom: -3px; /* 下線の位置 */
     width: 100%;
     height: 7px; /* 下線の太さ */
-    background-image: linear-gradient(to right,
-        #4285F4 0%, /* 最初の点の色 */
-        #4285F4 20%, /* 2番目の点の色 */
-        #EA4335 20%, /* 2番目の点の色 */
-        #EA4335 40%, /* 3番目の点の色 */
-        #FBBC05 40%, /* 3番目の点の色 */
-        #FBBC05 60%, /* 4番目の点の色 */
-        #34A853 60%, /* 4番目の点の色 */
-        #34A853 80%, /* 最後の点の色 */
-        #4285F4 80%  /* 最後の点の色 */
-    );
 }
 
 
