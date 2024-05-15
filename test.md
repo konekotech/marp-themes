@@ -1,7 +1,7 @@
 ---
 marp: true
 size: 16:9
-theme: google-style
+theme: test-style
 paginate: true
 footer: "@konekotech All rights reserved."
 ---
