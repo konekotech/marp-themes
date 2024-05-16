@@ -111,3 +111,7 @@ pre {
   font-weight: bold;
   text-align: center;
 }
+
+ul {
+    padding-left: 1em; /* 余白を調整する */
+}

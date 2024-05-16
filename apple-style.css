@@ -163,3 +163,7 @@ h6 strong{
   /* 未対応ブラウザのために一応テキスト色を指定しておく */
   color: blue;
 }
+
+ul {
+    padding-left: 1em; /* 余白を調整する */
+}
