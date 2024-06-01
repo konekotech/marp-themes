@@ -1,6 +1,6 @@
 ---
 marp: true
-size: 16:9
+size: 4:3
 theme: test-style
 paginate: true
 footer: "@konekotech All rights reserved."
@@ -10,11 +10,11 @@ footer: "@konekotech All rights reserved."
 _class: top
 -->
 
-# SECURITY INFORMATICAL PROGRAM
+# Python 機械学習プログラミング PyTorch & scikit-learn 編
 
-## Mac 編
+## 第 8 章 機械学習の適用 -- 感情分析
 
-## @konekotech
+### 首藤 朗
 
 ---
 
